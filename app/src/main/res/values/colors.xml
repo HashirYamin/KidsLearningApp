@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="card_bg">#FFFFFF</color>
+    <color name="button_normal">#00FFB7</color>
+    <color name="button_focused">#FFD100</color>
+    <color name="button_pressed">#002AFF</color>
+    <color name="button_text_color">#FF000000</color>
+    <color name="option_1">#FF00C0</color>
+    <color name="option_2">#00FFEA</color>
+    <color name="option_3">#2FFF00</color>
+    <color name="brown">#7A2700</color>
+</resources>

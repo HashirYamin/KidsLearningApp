@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg"
+    tools:context=".LoginAcitivity">
+
+    <EditText
+        android:id="@+id/child_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/designed_edit_text"
+        android:drawableLeft="@drawable/baseline_child_care_24"
+        android:drawablePadding="10dp"
+        android:hint="Hey kid Enter Your name here"
+        android:inputType="text"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/lg_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/child_name"
+        android:textSize="15dp"
+        android:background="@drawable/designed_edit_text"
+        android:layout_marginTop="20dp"
+        android:hint="Your Password"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/baseline_password_24"
+        android:drawablePadding="10dp"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Login_btn"
+        android:text="Enter"
+        android:textSize="18dp"
+        android:layout_below="@+id/lg_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        />
+    <TextView
+        android:id="@+id/dont_acc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dont Have account?"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/Login_btn"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/create_acc"
+        android:text="Create"
+        android:textSize="18dp"
+        android:layout_below="@+id/dont_acc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+
+        />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/weclome_anim"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        app:lottie_rawRes="@raw/welcomeanim"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@id/weclome_anim"
+        app:lottie_rawRes="@raw/cutecat"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_alignParentStart="true"
+        />
+</RelativeLayout>

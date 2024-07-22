@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/mathsbg"
+    >
+    <TextView
+        android:id="@+id/suggestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Always Try to give answer Fast"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/tv_title"
+        android:textSize="20sp"
+        android:textStyle="italic|bold"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maths Game"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_marginTop="60dp"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/question_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question"
+        android:textSize="32sp"
+        android:layout_below="@+id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+    <EditText
+        android:id="@+id/answer_text"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Your answer"
+        android:inputType="number"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:elevation="10dp"
+        android:layout_below="@+id/question_text"
+        android:background="@drawable/edit_text_shape_one"
+        />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/answer_text"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>

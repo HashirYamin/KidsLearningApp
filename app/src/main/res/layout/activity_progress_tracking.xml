@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/strongkid"
+    >
+
+    <TextView
+        android:id="@+id/progress_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Progress"
+        android:textStyle="bold"
+        android:textSize="42sp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/tv_alphabet_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alphabet Progress: "
+        android:textSize="20sp"
+        android:layout_below="@+id/progress_title"
+        android:layout_marginTop="30dp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/improve_alphabet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_alphabet_progress"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        android:text="Improve Alphabet Learning"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tv_shapes_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shapes Progress: "
+        android:textSize="20sp"
+        android:layout_below="@+id/improve_alphabet"
+        android:layout_marginTop="30dp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/improve_shapes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_shapes_progress"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        android:text="Improve Shapes Learning"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tv_math_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Math Progress: "
+        android:textSize="20sp"
+        android:layout_below="@+id/improve_shapes"
+        android:layout_marginTop="30dp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/improve_math"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_math_progress"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        android:text="Improve Math Skills"
+        android:layout_marginTop="8dp" />
+</RelativeLayout>

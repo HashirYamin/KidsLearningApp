@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="@drawable/homebg">
+
+        <TextView
+            android:id="@+id/profile"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:gravity="center"
+            android:text=""
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="50dp"
+            android:textColor="@color/black"
+            android:background="@drawable/baseline_circle_24"
+            android:textStyle="bold"
+            android:layout_marginLeft="39dp"
+            android:layout_marginTop="6dp"
+            />
+    <TextView
+        android:id="@+id/profile_text"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="25dp"
+        android:layout_toRightOf="@+id/profile"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:columnCount="2"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/profile"
+            android:rowCount="4"
+            tools:ignore="UselessLeaf">
+
+            <!-- Alphabet Learning Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/alphabet_learning"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="#4A00B0FF"
+                android:layout_marginEnd="3dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp"
+                tools:targetApi="lollipop">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/baseline_abc_24"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alphabet Learning"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:gravity="center_horizontal"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Shape Learning Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/shape_learning"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="#4A00B0FF"
+                android:layout_marginStart="3dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp"
+                tools:targetApi="lollipop">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/baseline_shape_line_24"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shapes Learning"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:gravity="center_horizontal"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Number Skill Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/math_game"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="#4A00B0FF"
+                android:layout_marginStart="3dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp"
+                tools:targetApi="lollipop">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/baseline_format_list_numbered_24"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Number Skill"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:gravity="center_horizontal"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Overall Development Card -->
+
+
+            <!-- Progress Tracking Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/progress_tracking"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginStart="3dp"
+                app:cardBackgroundColor="#4A00B0FF"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp"
+                tools:targetApi="lollipop">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/baseline_trending_up_24"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Progress Tracking"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:gravity="center_horizontal"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Parent Portal Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/parent_portal"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="#4A00B0FF"
+                android:layout_marginEnd="3dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp"
+                tools:targetApi="lollipop">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/baseline_family_restroom_24"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Parent Portal"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:gravity="center_horizontal"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Logout Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/logout"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="#4A00B0FF"
+                android:layout_marginStart="3dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp"
+                tools:targetApi="lollipop">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/baseline_logout_24"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Logout"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:gravity="center_horizontal"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+    </RelativeLayout>

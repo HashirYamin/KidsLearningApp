@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/registrationbg"
+    tools:context=".Registration">
+    <TextView
+        android:id="@+id/regiteration_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="STUDENT REGISTERATION"
+        android:textColor="@color/white"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="casual"
+        android:layout_marginRight="10dp"
+        android:textSize="33sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        />
+    <EditText
+        android:id="@+id/std_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regiteration_title"
+        android:padding="15dp"
+        android:hint="Student Name"
+        android:layout_marginHorizontal="20dp"
+        android:inputType="text"
+        android:background="@drawable/edit_text_shape_one"
+        android:elevation="8dp"
+        android:layout_marginTop="50dp"
+        />
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/std_name"
+        android:layout_marginHorizontal="20dp"
+        android:padding="15dp"
+        android:hint="Age"
+        android:inputType="number"
+        android:background="@drawable/edit_text_shape_one"
+        android:elevation="8dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/age"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_text_shape_one"
+        android:elevation="8dp"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="15dp" />
+    <EditText
+        android:id="@+id/confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:padding="15dp"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/edit_text_shape_one"
+        android:elevation="8dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirm_password"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="114dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/btn_rounded_corners"
+        android:text="LET ME REGISTER"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

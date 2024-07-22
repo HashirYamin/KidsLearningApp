@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/parentportal"
+    >
+
+    <TextView
+        android:id="@+id/child_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Child: "
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/alphabet_progress_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alphabet Progress: "
+        android:textSize="18sp"
+        android:layout_below="@+id/child_name"
+        android:layout_marginTop="20dp"
+        android:textStyle="italic" />
+
+    <ProgressBar
+        android:id="@+id/alphabet_progress_bar"
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alphabet_progress_text"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/pdf_alphabet_learning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:text="Learn alphabets from pdf"
+        android:layout_below="@+id/alphabet_progress_bar"/>
+
+    <TextView
+        android:id="@+id/shapes_progress_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shapes Progress: "
+        android:textSize="18sp"
+        android:layout_below="@+id/pdf_alphabet_learning"
+        android:layout_marginTop="20dp"
+        android:textStyle="italic" />
+
+    <ProgressBar
+        android:id="@+id/shapes_progress_bar"
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shapes_progress_text"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/pdf_shapes_learning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:text="Learn Shapes from pdf"
+        android:layout_below="@+id/shapes_progress_bar"/>
+
+    <TextView
+        android:id="@+id/math_progress_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Math Progress: "
+        android:textSize="18sp"
+        android:layout_below="@+id/pdf_shapes_learning"
+        android:layout_marginTop="20dp"
+        android:textStyle="italic" />
+
+    <ProgressBar
+        android:id="@+id/math_progress_bar"
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/math_progress_text"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/pdf_maths_learning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Learn Maths from pdf"
+        android:layout_below="@+id/math_progress_bar"/>
+</RelativeLayout>

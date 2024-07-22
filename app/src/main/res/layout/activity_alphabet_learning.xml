@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".AlphabetLearning"
+    android:background="@drawable/alphabetbg2"
+    >
+    <TextView
+        android:id="@+id/alphabet_learning_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="38sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="Click Alphabets to Learn"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/suggestion"
+        android:layout_below="@+id/alphabet_learning_title"
+        android:textStyle="bold|italic"
+        android:textColor="@color/black"
+        android:textSize="17dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/alphabet_learning_title"
+        android:layout_marginTop="62dp">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+        </LinearLayout>
+    </ScrollView>
+    <ImageView
+        android:id="@+id/iv_display_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>
