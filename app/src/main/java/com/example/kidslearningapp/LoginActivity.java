@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class LoginAcitivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     TextView notAcc;
     EditText name, pass;
@@ -36,12 +36,12 @@ public class LoginAcitivity extends AppCompatActivity {
             String password = pass.getText().toString();
             Database db = new Database(getApplicationContext(),"learnnplay.db",null,3);
             if(childName.length() == 0 || password.length() == 0) {
-                Toast.makeText(LoginAcitivity.this, "Please fill all the fields", Toast.LENGTH_SHORT).show();
+                Toast.makeText(LoginActivity.this, "Please fill all the fields", Toast.LENGTH_SHORT).show();
             }
             else if(childName.length()<3){
-                Toast.makeText(LoginAcitivity.this, "Please Enter correct Username", Toast.LENGTH_SHORT).show();
+                Toast.makeText(LoginActivity.this, "Please Enter correct Username", Toast.LENGTH_SHORT).show();
             } else if (password.length()<3) {
-                Toast.makeText(LoginAcitivity.this, "Password length must be 3 or more", Toast.LENGTH_SHORT).show();
+                Toast.makeText(LoginActivity.this, "Password length must be 3 or more", Toast.LENGTH_SHORT).show();
             } else {
                 if(db.login(childName, password)==1){
                     SharedPreferences pref = getSharedPreferences("login_check",MODE_PRIVATE);
@@ -49,18 +49,18 @@ public class LoginAcitivity extends AppCompatActivity {
                     editor1.putBoolean("flag",true);
                     editor1.apply();
 
-                    Toast.makeText(LoginAcitivity.this, "Login success", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "Login success", Toast.LENGTH_SHORT).show();
                     SharedPreferences sharedPreferences = getSharedPreferences("child_name",MODE_PRIVATE);
                     SharedPreferences.Editor editor2 = sharedPreferences.edit();
                     editor2.putString("childname",childName);
                     editor2.apply();
-                    startActivity(new Intent(LoginAcitivity.this, MainActivity.class));
+                    startActivity(new Intent(LoginActivity.this, MainActivity.class));
                 }else {
-                    Toast.makeText(LoginAcitivity.this, "Invalid Username and Password", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "Invalid Username and Password", Toast.LENGTH_SHORT).show();
                 }
             }
         });
-        createAcc.setOnClickListener(view -> startActivity(new Intent(LoginAcitivity.this,Registration.class)));
-        notAcc.setOnClickListener(view -> startActivity(new Intent(LoginAcitivity.this,Registration.class)));
+        createAcc.setOnClickListener(view -> startActivity(new Intent(LoginActivity.this,Registration.class)));
+        notAcc.setOnClickListener(view -> startActivity(new Intent(LoginActivity.this,Registration.class)));
     }
 }

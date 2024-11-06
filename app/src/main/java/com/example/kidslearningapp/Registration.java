@@ -34,7 +34,7 @@ public class Registration extends AppCompatActivity {
         Animation move = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.move);
         registrationText.startAnimation(move);
 
-        Intent intent = new Intent(Registration.this, LoginAcitivity.class);
+        Intent intent = new Intent(Registration.this, LoginActivity.class);
 
         register.setOnClickListener(v -> {
             String studentName = stdName.getText().toString();

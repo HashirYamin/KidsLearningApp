@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
             SharedPreferences.Editor editor = pref.edit();
             editor.putBoolean("flag", false);
             editor.apply();
-            startActivity(new Intent(MainActivity.this, LoginAcitivity.class));
+            startActivity(new Intent(MainActivity.this, LoginActivity.class));
             finish();
         });
 
