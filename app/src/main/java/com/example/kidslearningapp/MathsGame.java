@@ -22,7 +22,7 @@ public class MathsGame extends AppCompatActivity {
         setContentView(R.layout.activity_maths_game);
 
         childname = getIntent().getStringExtra("childname");
-        currentLevel = getIntent().getIntExtra("level", 1); // Start from level 1
+        currentLevel = getIntent().getIntExtra("level", 1);
 
         if (childname == null) {
             throw new IllegalArgumentException("Child name is required to track progress.");
@@ -39,15 +39,15 @@ public class MathsGame extends AppCompatActivity {
 
     private void generateQuestion() {
         Random random = new Random();
-        int num1 = random.nextInt(currentLevel * 10) + 1; // Generate number between 1 and currentLevel*10
+        int num1 = random.nextInt(currentLevel * 10) + 1;
         int num2 = random.nextInt(currentLevel * 10) + 1;
-        boolean isAddition = random.nextBoolean(); // Randomly choose between addition and subtraction
+        boolean isAddition = random.nextBoolean();
 
         if (isAddition) {
             correctAnswer = num1 + num2;
             questionText.setText("What is " + num1 + " + " + num2 + "?");
         } else {
-            // Ensure no negative answers for simplicity
+
             if (num1 < num2) {
                 int temp = num1;
                 num1 = num2;

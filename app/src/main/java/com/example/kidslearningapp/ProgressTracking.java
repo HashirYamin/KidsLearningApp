@@ -37,7 +37,6 @@ public class ProgressTracking extends AppCompatActivity {
         shapesProgressText.setText("You have learned " + shapesProgress + " shapes!");
         mathProgressText.setText("You have reached level " + mathProgress + " in math!");
 
-        // Display congratulations message if progress is maxed
         if (alphabetProgress == 26) {
             Toast.makeText(this, "Congratulations! You have learned all the letters!", Toast.LENGTH_LONG).show();
         }

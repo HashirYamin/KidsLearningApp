@@ -23,7 +23,7 @@ public class ParentPortal extends AppCompatActivity {
         setContentView(R.layout.activity_parent_portal);
         database = new Database(this, "learnnplay.db", null, 3);
 
-        // Retrieve child name from SharedPreferences
+
         SharedPreferences sharedPreferences = getSharedPreferences("child_name", Context.MODE_PRIVATE);
         childname = sharedPreferences.getString("childname", "");
 
@@ -38,10 +38,10 @@ public class ParentPortal extends AppCompatActivity {
         shapesPdfButton = findViewById(R.id.pdf_shapes_learning);
         mathPdfButton = findViewById(R.id.pdf_maths_learning);
 
-        // Set child name
+
         childNameText.setText("Child Name: " + childname);
 
-        // Display progress
+
         displayProgress();
     }
 
@@ -50,7 +50,6 @@ public class ParentPortal extends AppCompatActivity {
         int shapesProgress = database.getShapesProgress(childname);
         int mathProgress = database.getMathProgress(childname);
 
-        // Assuming the total number of alphabets is 26, shapes is 10, and math levels is 10
         alphabetProgressBar.setMax(26);
         shapesProgressBar.setMax(7);
         mathProgressBar.setMax(50);
@@ -63,7 +62,6 @@ public class ParentPortal extends AppCompatActivity {
         shapesProgressText.setText("Shapes Progress: " + shapesProgress + " shapes learned");
         mathProgressText.setText("Math Progress: Level " + mathProgress + " reached");
 
-        // Display congratulations message if progress is maxed
         if (alphabetProgress == 26) {
             Toast.makeText(this, "Congratulations! You have learned all the letters!", Toast.LENGTH_LONG).show();
         }

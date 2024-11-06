@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra("childname", childName);
             startActivity(intent);
         });
-        ShapesLearning.setOnClickListener(v -> { // Add this block to set the onClickListener for ShapesLearning
+        ShapesLearning.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, ShapesLearning.class);
             intent.putExtra("childname", childName);
             startActivity(intent);
@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         MathGame.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, MathsGame.class);
             intent.putExtra("childname", childName);
-            intent.putExtra("level", 1); // Starting level for the math game
+            intent.putExtra("level", 1);
             startActivity(intent);
         });
 

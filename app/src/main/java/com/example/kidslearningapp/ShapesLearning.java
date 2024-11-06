@@ -69,7 +69,6 @@ public class ShapesLearning extends AppCompatActivity {
         option2Button.setText(options.get(1));
         option3Button.setText(options.get(2));
 
-        // Change background color of the buttons
         option1Button.setBackgroundColor(Color.parseColor("#FF00C0"));
         option2Button.setBackgroundColor(Color.parseColor("#00FFEA"));
         option3Button.setBackgroundColor(Color.parseColor("#2FFF00"));
